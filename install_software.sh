@@ -2,7 +2,7 @@
 apt update && apt upgrade -y
 
 # install stuff for zsh
-apt install git wget zsh
+apt install git wget zsh -y
 
 # install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
