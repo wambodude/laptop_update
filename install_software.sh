@@ -1,11 +1,11 @@
-# update everything
-apt update && apt upgrade -y
+# install wsl (run in windows powershell)
+# wsl --update
+# wsl --install ubuntu
+# add user schueler with pw 1234
+# go into docker desktop settings -> set dark, disable statistics and auto startup as well as under resources/wsl integration activate the new ubuntu ressource
 
-# install stuff for zsh
-apt install git wget zsh -y
-
-# install oh-my-zsh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# update everything && install stuff for zsh, zsh itself and oh-my-zsh
+apt update && apt upgrade -y && apt install git wget zsh -y && sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 # install p10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
