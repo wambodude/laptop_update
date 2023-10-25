@@ -24,3 +24,7 @@ source ~/.zshrc
 
 # the p10k configuration wizard now opens. press the following buttons
 # nnny21321121422n1y
+
+# install poetry
+curl -sSL https://install.python-poetry.org | python3 -
+echo '\n# Add poetry to PATH\nexport PATH="/home/schueler/.local/bin:$PATH"' >> ~/.zshrc
