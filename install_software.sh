@@ -6,7 +6,7 @@
 # open terminal application in windows -> go to settings and set ubuntu to default
 
 # update everything && install stuff for zsh, zsh itself and oh-my-zsh
-apt update && apt upgrade -y && apt install git wget zsh -y && sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+sudo apt update && sudo apt upgrade -y && sudo apt install git wget zsh -y && sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 # you have to push y to set zsh as default terminal now
 
 # install p10k
